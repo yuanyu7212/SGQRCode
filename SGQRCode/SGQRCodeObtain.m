@@ -316,6 +316,7 @@ void soundCompleteCallback(SystemSoundID soundID, void *clientData){
     imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     imagePicker.delegate = self;
     imagePicker.navigationBar.translucent = NO;//将导航条的毛玻璃效果去除掉就可以了,解决上移问题
+    [[UINavigationBar appearance] setTranslucent:NO];
     [_controller presentViewController:imagePicker animated:YES completion:nil];
 }
 
